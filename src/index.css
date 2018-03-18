@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  background: linear-gradient(297.5deg, DarkOrchid, CornflowerBlue);
+}
+
+input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 3px;
+  color: MidnightBlue;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.App section {
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.App section p {
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom-width: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.App section p:before {
+  content: "👉";
+  padding-right: 10px;
+}
+.App section p:last-child {
+  border-bottom-width: 1px;
+}
