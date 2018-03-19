@@ -27,20 +27,21 @@ input {
 .App section {
   margin-top: 10px;
   box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .App section p {
   margin: 0;
   padding: 15px;
   cursor: pointer;
-  border-bottom-width: 0;
   background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .App section p:before {
   content: "👉";
   padding-right: 10px;
 }
 .App section p:last-child {
-  border-bottom-width: 1px;
+  border-bottom: 0;
 }

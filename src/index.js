@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 
-const api = "https://micro-server.glitch.me"
+const api = "http://localhost:3000"
 
 class App extends Component {
   state = {
