@@ -1,54 +1,54 @@
-import React, { Component } from "react"
-import ReactDOM from "react-dom"
-import "./index.css"
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-const api = "http://localhost:3000"
+const api = "http://localhost:3000";
 
 class App extends Component {
   state = {
     text: "",
     list: []
-  }
+  };
 
   async componentDidMount() {
-    const list = await this.request()
+    const list = await this.request();
 
-    this.setState({ list })
+    this.setState({ list });
   }
 
   request = async options => {
-    const res = await fetch(api, options)
-    return res.json()
-  }
+    const res = await fetch(api, options);
+    return res.json();
+  };
 
   handleSubmit = async event => {
-    event.preventDefault()
+    event.preventDefault();
 
     const list = await this.request({
       method: "PUT",
       body: JSON.stringify({ text: this.state.text })
-    })
+    });
 
     this.setState({
       list,
       text: ""
-    })
-  }
+    });
+  };
 
   handleClick = async id => {
     const list = await this.request({
       method: "DELETE",
       body: JSON.stringify({ id })
-    })
+    });
 
     this.setState({
       list
-    })
-  }
+    });
+  };
 
   handleChange = event => {
-    this.setState({ text: event.target.value })
-  }
+    this.setState({ text: event.target.value });
+  };
 
   render() {
     return (
@@ -71,8 +71,8 @@ class App extends Component {
           ))}
         </section>
       </div>
-    )
+    );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root"));
