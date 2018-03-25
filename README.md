@@ -17,6 +17,7 @@ Create a new directory.
 
 ```bash
 $ mkdir micro-ui
+$ cd micro-ui
 ```
 
 ## Step 2
