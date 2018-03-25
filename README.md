@@ -307,36 +307,6 @@ input {
 
 ## Step 18
 
-Let's save the new todo with replacing our `render()` function in `src/index.js`.
-
-```js
-render() {
-  return (
-    <div className="App">
-      <form onSubmit={this.handleSubmit}>
-        <input
-          required
-          autoFocus
-          type="text"
-          value={this.state.text}
-          placeholder="✨ New Todo"
-          onChange={this.handleChange}
-        />
-      </form>
-      <section>
-        {this.state.list.map((item, id) => (
-          <p key={id} onClick={e => this.handleClick(id)}>
-            {item}
-          </p>
-        ))}
-      </section>
-    </div>
-  );
-}
-```
-
-## Step 19
-
 Add the following to our `App` class in `src/index.js`.
 
 ```js
