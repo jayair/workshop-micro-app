@@ -329,7 +329,7 @@ handleSubmit = async event => {
 
 ## Deploy Step 1
 
-Remix this project <a href="https://glitch.com/~wolfhacks-micro-app">test</a>.
+Remix this project <a href="https://glitch.com/~wolfhacks-micro-app">glitch.com/~wolfhacks-micro-app</a>.
 
 ## Deploy Step 2
 
